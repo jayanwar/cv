@@ -1,0 +1,202 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[super]{nth}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{1.7cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Jay} % Your first name
+\familyname{Anwar} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{}{London, UK}
+\mobile{07925 357505}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{j.anwar95@gmail.com}
+% \homepage{github.com/jayanwar}{github.com/jayanwar}
+
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\cventry{{\footnotesize NOV 2021--}}{Full Stack Developer}{BNY Mellon}{London}{}{
+    \begin{itemize}
+        \item Front office developer role working in TypeScript and Java to build and maintain applications central to the running of the FX sales and trading platform.
+        \item Migration of legacy codebase from JavaScript to TypeScript to build a new frontend for the FX Trading Platforms.
+        \item Liaise with stakeholders in locations around the world in order to resolve issues and implement features.
+    \end{itemize}
+}
+\cventry{{\footnotesize SEP 2019--SEP 2021}}{Developer}{Space48}{Manchester}{}{
+    \begin{itemize}
+        \item Worked closely with external clients to deliver integration apps and micro-services to meet their business requirements, running demos and conducting end-to-end tests.
+        \item Integrated SaaS platforms with the use of cloud architecture (Microsoft Azure/Google Cloud).
+    \end{itemize}
+}
+\cventry{{\footnotesize JUN--JUL 2019}}{Teaching Intern}{Loreto College/St Peter's RC}{Manchester}{}{
+    \begin{itemize}
+        \item Acted as a teaching assistant in high school classes of mixed ability whilst also putting together and leading a Maths Roadshow type session (problem solving type problems, fixed amount of time to try and solve).
+    \end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{{\footnotesize 2015--2019}}{Mathematics MMath(Hons)}{University of Manchester, UK}{}{\nth{1} Class}{}  % Arguments not required can be left empty
+
+\cventry{{\footnotesize 2014--2015}}{Foundation Year (Science and Engineering)}{University of Manchester, UK}{}{84\%}{}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Notable Projects}
+\cventry{{\footnotesize 2022}}{App Migration}{BNY Mellon}{Internal Trade Enrichment Tool}{}{
+    \begin{itemize}
+        \item Rebuilt an internal tool's frontend codebase in Angular after AngularJS (1.x) EOL, as part of a team with members in the UK, India and the US.
+        \item Joined midway through the project and quickly became a contributing member of the team, optimising existing build processes and the developer experience.
+        \item Documented the existing functionality of the app and noted parts of the architecture (both frontend and backend) which could be improved upon.
+    \end{itemize}
+}
+\cventry{{\footnotesize 2020-2021}}{App Development}{Space48}{Styla CMS Shopify App}{}{
+\begin{itemize}
+\item Worked in a team of 3 to architect and develop a Shopify app - from receiving client requirements to developing a build available to Shopify merchants. App is responsible for syncing pages periodically from a CMS platform to a Shopify store, allowing those pages to be viewable on the store without human interaction
+\item Use NextJS (a React framework) to build a full stack app, which is deployed to GCP as an App engine project, using Firestore as a database.
+\item Tackled both frontend and backend aspects of the app. Frontend required the development of a single page UI which lists Styla pages and their sync status. Backend required the development of the periodic sync process.
+\end{itemize}
+}
+
+\cventry{{\footnotesize 2019-2020}}{Website Re-platform}{Space48}{Ordnance Survey Map Shop}{}{
+\begin{itemize}
+\item Major project in terms of size and scope, re-platforming a client's website from Magento to BigCommerce.
+\item Personally built 5(out of a total 6) of the integration micro-services using Microsoft Azure, including Single Sign-On (SSO) integration and subscription services. 
+\item Took a leading role in the development of the subscription service, taking responsibility for architectural design, writing of test plans, user/support documentation and client demos. 
+\item Used teamwork and presentation skills in a project team spanning three organisations, with demos attended by up to 30 stakeholders.
+\end{itemize}
+}
+
+\cventry{{\footnotesize 2018--2019}}{Regular Graphs and Constructions of Cages}{University of Manchester}{Master's Thesis (Grade: 85\%)}{}{
+\begin{itemize}
+    \item Researched techniques for constructing graphs with specific properties, finding the minimum number of vertices needed for a graph with these properties using the algebraic software package Magma.
+    \item Utilised a graph-theoretic approach, describing algorithms from an abstract algebra perspective.
+\end{itemize}
+}  % Arguments not required can be left empty
+
+\cventry{{\footnotesize 2018}}{Sorting Algorithms and the Game of Life}{University of Manchester}{4th Year Module (Grade: 85\%)}{}{
+\begin{itemize} 
+    \item Wrote a program to simulate John Conway's \textit{Game of Life} in C++, making extensive use of sorting functions and recursion, as well as the core object-oriented features of classes such as inheritance and abstraction.
+\end{itemize}
+}
+
+\cventry{{\footnotesize 2017}}{Connect 4}{University of Manchester}{2nd Year Module (Grade: 92\%)}{}{
+\begin{itemize}
+    \item Wrote a command line Connect 4 game in Python, allowing the user to play against another human, the computer, or run a game between two computer opponents.
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{{\footnotesize Programming Languages}}{TypeScript/JavaScript, Python, Bash/Shell, Java, C++, PHP, HTML, Matlab {\footnotesize (basic)}, R {\footnotesize (basic)}}
+\cvitem{{\footnotesize Frameworks}}{\textbf{\textit{Frontend}}: React, Angular, NextJS; \textbf{\textit{Backend}}: Express, Koa, Spring}
+\cvitem{{\footnotesize Databases}}{Microsoft Azure Cosmos {\footnotesize (similar to MongoDB)}, Google Firestore {\footnotesize (NoSQL)}, Microsoft SQL Server}
+\cvitem{{\footnotesize General Computing}}{Linux {\footnotesize (Ubuntu, Raspbian/Debian, QNAP OS)}, Docker, \LaTeX}
+
+%\cvitem{General}{Public speaking, simplifying abstract/advanced concepts.}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+%\begin{small}
+%\cvitemwithcomment{Arabic}{Native Speaker}{}
+%\cvitemwithcomment{French}{Near Native}{excellent command}
+%\cvitemwithcomment{English}{Near Native}{excellent command}
+%\cvitemwithcomment{Chinese}{Intermediate}{good working %knowledge}
+%\cvitemwithcomment{Japanese}{Intermediate}{good working %knowledge}
+%\end{small}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND EXTRA CURRICULAR ACTIVITY SECTION
+%----------------------------------------------------------------------------------------
+%\bigskip
+
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
