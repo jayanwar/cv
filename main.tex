@@ -30,9 +30,9 @@
 
 \usepackage[super]{nth}
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-\usepackage[scale=0.9]{geometry} % Reduce document margins
-\setlength{\hintscolumnwidth}{1.7cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\usepackage[scale=0.93]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{1.575cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -64,83 +64,55 @@
 %----------------------------------------------------------------------------------------
 
 \section{Experience}
-\cventry{{\footnotesize NOV 2021--}}{Full Stack Developer}{BNY Mellon}{London}{}{
+\cventry{{\footnotesize NOV 2021--}}{Vice President, Full Stack Engineer}{BNY Mellon}{London}{}{
     \begin{itemize}
-        \item Front office developer role working in TypeScript and Java to build and maintain applications central to the running of the FX sales and trading platform.
-        \item Migration of legacy codebase from JavaScript to TypeScript to build a new frontend for the FX Trading Platforms.
-        \item Liaise with stakeholders in locations around the world in order to resolve issues and implement features.
+        \item Front office developer role working primarily in Java and TypeScript to build and maintain applications central to the running of the FX sales and trading platform.
+        \item Lead developer taking on responsibilities such as architecture design, mentoring junior developers and leading code reviews in a high pressure, agile environment.
+        \item Deploy and mantain production applications to bare metal environments in co-location sites globally, as well as containerised applications within the bank's private infrastructure.
+        \item Liaise with product, strategy, trading and production support stakeholders in order to resolve issues, design/implement features, demo solutions and ensure sufficient levels of control in accordance with regulatory requirements.
     \end{itemize}
 }
 \cventry{{\footnotesize SEP 2019--SEP 2021}}{Developer}{Space48}{Manchester}{}{
     \begin{itemize}
-        \item Worked closely with external clients to deliver integration apps and micro-services to meet their business requirements, running demos and conducting end-to-end tests.
-        \item Integrated SaaS platforms with the use of cloud architecture (Microsoft Azure/Google Cloud).
+        \item Worked closely with external clients to deliver SaaS platform integration micro-services in the cloud to meet their business requirements.
     \end{itemize}
 }
-\cventry{{\footnotesize JUN--JUL 2019}}{Teaching Intern}{Loreto College/St Peter's RC}{Manchester}{}{
-    \begin{itemize}
-        \item Acted as a teaching assistant in high school classes of mixed ability whilst also putting together and leading a Maths Roadshow type session (problem solving type problems, fixed amount of time to try and solve).
-    \end{itemize}
-}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-
-\cventry{{\footnotesize 2015--2019}}{Mathematics MMath(Hons)}{University of Manchester, UK}{}{\nth{1} Class}{}  % Arguments not required can be left empty
-
-\cventry{{\footnotesize 2014--2015}}{Foundation Year (Science and Engineering)}{University of Manchester, UK}{}{84\%}{}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Notable Projects}
-\cventry{{\footnotesize 2022}}{App Migration}{BNY Mellon}{Internal Trade Enrichment Tool}{}{
+
+\cventry{{\footnotesize 2022--}}{Vendor Replacement}{BNY Mellon}{FX Trading Platform}{}{
     \begin{itemize}
-        \item Rebuilt an internal tool's frontend codebase in Angular after AngularJS (1.x) EOL, as part of a team with members in the UK, India and the US.
-        \item Joined midway through the project and quickly became a contributing member of the team, optimising existing build processes and the developer experience.
-        \item Documented the existing functionality of the app and noted parts of the architecture (both frontend and backend) which could be improved upon.
+        \item Worked in a team of 3-6 developers in a lead capacity to develop major improvements on our internal FX Spot aggregation and trading platform used by traders globally, handling up to \$1B of trading volume a day.
+        \item Involved across all stages of the project, from initial planning and design to development, testing and deployment, ensuring high code quality and working with senior developers and domain experts. Took ownership of codebases across the entire stack, from market aggregation/execution to cross regional message transport.
+        \item Improved upon price latencies on the UI, spearheading efforts on both the frontend and backend to reduce the time taken to print a price on the UI to under 100ms. 
+        \item Handled conformance for a number of liquidity providers, liaising with internal and external stakeholders to ensure smooth integration.
+        \item Took the platform through various stages of growth, from a small proof of concept with access to full amount style trading in Singapore, to a fully fledged global trading platform with sweep capabilities and access to 20+ liquidity providers across New York and Singapore. Replaced third party vendor SmartTrade's aggregation platform, ensuring feature parity, resulting in up to \$1M/yr savings.
     \end{itemize}
 }
-\cventry{{\footnotesize 2020-2021}}{App Development}{Space48}{Styla CMS Shopify App}{}{
-\begin{itemize}
-\item Worked in a team of 3 to architect and develop a Shopify app - from receiving client requirements to developing a build available to Shopify merchants. App is responsible for syncing pages periodically from a CMS platform to a Shopify store, allowing those pages to be viewable on the store without human interaction
-\item Use NextJS (a React framework) to build a full stack app, which is deployed to GCP as an App engine project, using Firestore as a database.
-\item Tackled both frontend and backend aspects of the app. Frontend required the development of a single page UI which lists Styla pages and their sync status. Backend required the development of the periodic sync process.
-\end{itemize}
+
+\cventry{{\footnotesize 2021--2022}}{App Migration}{BNY Mellon}{Post Trade Enrichment Tool}{}{
+    \begin{itemize}
+        \item Rebuilt an internal tool's frontend codebase in Angular after AngularJS (1.x) EOL as part of a team of 3 developers.
+        \item Joined midway through the project and quickly became a contributing member of the team, optimising existing build processes and the developer experience, whilst also documenting existing functionality and noting possible improvements.
+    \end{itemize}
 }
 
-\cventry{{\footnotesize 2019-2020}}{Website Re-platform}{Space48}{Ordnance Survey Map Shop}{}{
-\begin{itemize}
-\item Major project in terms of size and scope, re-platforming a client's website from Magento to BigCommerce.
-\item Personally built 5(out of a total 6) of the integration micro-services using Microsoft Azure, including Single Sign-On (SSO) integration and subscription services. 
-\item Took a leading role in the development of the subscription service, taking responsibility for architectural design, writing of test plans, user/support documentation and client demos. 
-\item Used teamwork and presentation skills in a project team spanning three organisations, with demos attended by up to 30 stakeholders.
-\end{itemize}
+\cventry{{\footnotesize 2020--2021}}{App Development}{Space48}{Styla CMS Shopify App}{}{
+    \begin{itemize}
+        \item Worked in a team of 3 to architect and develop a Shopify app using NextJS and Google App Engine, allowing users to sync product pages from the Styla CMS platform to their Shopify store.
+    \end{itemize}
 }
 
-\cventry{{\footnotesize 2018--2019}}{Regular Graphs and Constructions of Cages}{University of Manchester}{Master's Thesis (Grade: 85\%)}{}{
-\begin{itemize}
-    \item Researched techniques for constructing graphs with specific properties, finding the minimum number of vertices needed for a graph with these properties using the algebraic software package Magma.
-    \item Utilised a graph-theoretic approach, describing algorithms from an abstract algebra perspective.
-\end{itemize}
-}  % Arguments not required can be left empty
-
-\cventry{{\footnotesize 2018}}{Sorting Algorithms and the Game of Life}{University of Manchester}{4th Year Module (Grade: 85\%)}{}{
-\begin{itemize} 
-    \item Wrote a program to simulate John Conway's \textit{Game of Life} in C++, making extensive use of sorting functions and recursion, as well as the core object-oriented features of classes such as inheritance and abstraction.
-\end{itemize}
+\cventry{{\footnotesize 2019--2020}}{Website Re-platform}{Space48}{Ordnance Survey Map Shop}{}{
+    \begin{itemize}
+        \item Replatformed ecommerce website from Magento to BigCommerce, personally responsible for building micro-services using Microsft Azure, integrating SSO, ERP and subscription services.
+        \item Led the development of the subscription service, taking responsibility for architectural design and writing of test plans and support documentation.
+    \end{itemize}
 }
-
-\cventry{{\footnotesize 2017}}{Connect 4}{University of Manchester}{2nd Year Module (Grade: 92\%)}{}{
-\begin{itemize}
-    \item Wrote a command line Connect 4 game in Python, allowing the user to play against another human, the computer, or run a game between two computer opponents.
-\end{itemize}
-}
-
 
 %----------------------------------------------------------------------------------------
 %	SKILLS SECTION
@@ -148,10 +120,25 @@
 
 \section{Skills}
 
-\cvitem{{\footnotesize Programming Languages}}{TypeScript/JavaScript, Python, Bash/Shell, Java, C++, PHP, HTML, Matlab {\footnotesize (basic)}, R {\footnotesize (basic)}}
-\cvitem{{\footnotesize Frameworks}}{\textbf{\textit{Frontend}}: React, Angular, NextJS; \textbf{\textit{Backend}}: Express, Koa, Spring}
-\cvitem{{\footnotesize Databases}}{Microsoft Azure Cosmos {\footnotesize (similar to MongoDB)}, Google Firestore {\footnotesize (NoSQL)}, Microsoft SQL Server}
-\cvitem{{\footnotesize General Computing}}{Linux {\footnotesize (Ubuntu, Raspbian/Debian, QNAP OS)}, Docker, \LaTeX}
+\cvitem{{\footnotesize Coding}}{Java, TypeScript/JavaScript, Bash/Shell, Terraform, Python, C++, PHP, HTML+CSS, R {\footnotesize (basic)}}
+\cvitem{{\footnotesize Frameworks}}{\textbf{\textit{Frontend}}: React, Angular, NextJS; \textbf{\textit{Backend}}: Spring, Express}
+\cvitem{{\footnotesize Messaging}}{\textbf{\textit{Transports}}: Solace, ZeroMQ, REST/WebSocket; \textbf{\textit{Protocols}}: Protobuf, Flatbuffers, FIX, SBE}
+\cvitem{{\footnotesize Databases}}{Redis, Microsoft SQL Server, Prometheus, Microsoft Azure Cosmos, Google Firestore}
+\cvitem{{\footnotesize Computing}}{Linux {\footnotesize (RedHat, Ubuntu, Raspbian/Debian, QNAP OS)}, Docker}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{{\footnotesize 2015--2019}}{Mathematics MMath (Hons)}{University of Manchester, UK}{}{\nth{1} Class}{
+    \begin{itemize}
+        \item Final year project on a graph theory problem with a computational approach, researching techniques for constructing graphs with minimum girth and edge regularity amongst vertices. Described algorithms from an abstract algebra perspective and exprimented with the algebraic programming language Magma.
+        \item Programming courses using Python and C++ to explore problems such as Compressed Sensing, John Conway's Game of Life and building CLI tools and games. 
+        \item Other courses included heavy emphasis on abstract algebra and mathematical logic. 
+    \end{itemize}
+} 
 
 %\cvitem{General}{Public speaking, simplifying abstract/advanced concepts.}
 
